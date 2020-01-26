@@ -1,5 +1,8 @@
 {
     "__type__": "Deck",
+    "activeTags": [
+        "group"
+    ],
     "children": [],
     "crowdanki_uuid": "fd612452-4071-11ea-accf-4c32759bd5cf",
     "deck_config_uuid": "d4b9b326-4070-11ea-accf-4c32759bd5cf",
@@ -54,6 +57,7 @@
     "dyn": 0,
     "extendNew": 10,
     "extendRev": 50,
+    "inactiveTags": [],
     "media_files": [
         "8292f242520b48f9b47c8e7a99acdf1c-ao-1-A.svg",
         "8292f242520b48f9b47c8e7a99acdf1c-ao-1-Q.svg",
@@ -1968,7 +1972,9 @@
             "guid": "z|qzs$Uvgt",
             "newlyAdded": false,
             "note_model_uuid": "d46ad67a-4070-11ea-accf-4c32759bd5cf",
-            "tags": []
+            "tags": [
+                "group"
+            ]
         }
     ]
 }
