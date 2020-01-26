@@ -1,0 +1,1936 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "fd612452-4071-11ea-accf-4c32759bd5cf",
+    "deck_config_uuid": "d4b9b326-4070-11ea-accf-4c32759bd5cf",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "d4b9b326-4070-11ea-accf-4c32759bd5cf",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Anatomy",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1,
+                    10
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    7
+                ],
+                "order": 1,
+                "perDay": 999,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 200
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-1-A.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-1-Q.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-10-A.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-10-Q.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-2-A.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-2-Q.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-3-A.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-3-Q.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-4-A.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-4-Q.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-5-A.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-5-Q.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-6-A.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-6-Q.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-7-A.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-7-Q.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-8-A.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-8-Q.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-9-A.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-9-Q.svg",
+        "8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg",
+        "Screen Shot 2020-01-22 at 12.47.58 PM.png",
+        "paste-10896332031532.jpg",
+        "paste-14388140443248.jpg",
+        "paste-14972255995210.jpg",
+        "paste-15109694948716.jpg",
+        "paste-15479062136186.jpg",
+        "paste-15788299781718.jpg",
+        "paste-15895673964122.jpg",
+        "paste-22595822945832.jpg",
+        "paste-22600117913128.jpg",
+        "paste-26792005993534.jpg",
+        "paste-6438155977144.jpg",
+        "paste-7159710483406.jpg"
+    ],
+    "name": "School::Anatomy::Block_1_Musculoskeletal",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "d46ad67a-4070-11ea-accf-4c32759bd5cf",
+            "css": "/* general card style */\n\nhtml {\n  /* scrollbar always visible in order to prevent shift when revealing answer*/\n  overflow-y: scroll;\n}\n\n.card {\n  font-family: \"Helvetica LT Std\", Helvetica, Arial, Sans;\n  font-size: 150%;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\n/* general layout */\n\n.text {\n  /* center left-aligned text on card */\n  display: inline-block;\n  align: center;\n  text-align: left;\n  margin: auto;\n  max-width: 40em;\n}\n\n.hidden {\n  /* guarantees a consistent width across front and back */\n  font-weight: bold;\n  display: block;\n  line-height:0;\n  height: 0;\n  overflow: hidden;\n  visibility: hidden;\n}\n\n.title {\n  font-weight: bold;\n  font-size: 1.1em;\n  margin-bottom: 1em;\n  text-align: center;\n}\n\n/* clozes */\n\n.cloze {\n  /* regular cloze deletion */\n  font-weight: bold;\n  color: #0048FF;\n}\n\n/* original text reveal hint */\n\n.fullhint a {\n  color: #0048FF;\n}\n\n.card21 .fullhint{\n  /* no need to display hint on last card */\n  display:none;\n}\n\n/* additional fields */\n\n.extra{\n  margin-top: 0.5em;\n  margin: auto;\n  max-width: 40em;\n}\n\n.extra-entry{\n  margin-top: 0.8em;\n  font-size: 0.9em;\n  text-align:left;\n}\n\n.extra-descr{\n  margin-bottom: 0.2em;\n  font-weight: bold;\n  font-size: 1em;\n}",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Original",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Title",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Remarks",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Sources",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Settings",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text1",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text2",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text3",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text4",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text5",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text6",
+                    "ord": 10,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text7",
+                    "ord": 11,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text8",
+                    "ord": 12,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text9",
+                    "ord": 13,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text10",
+                    "ord": 14,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text11",
+                    "ord": 15,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text12",
+                    "ord": 16,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text13",
+                    "ord": 17,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text14",
+                    "ord": 18,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text15",
+                    "ord": 19,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text16",
+                    "ord": 20,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text17",
+                    "ord": 21,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text18",
+                    "ord": 22,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text19",
+                    "ord": 23,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text20",
+                    "ord": 24,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Full",
+                    "ord": 25,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "Cloze (overlapping)",
+            "sortf": 1,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"back\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">{{Original}}</div>\n  </div>\n  <div class=\"extra\"><hr></div>\n  <div class=\"text\"><div class=\"fullhint\">{{hint:Original}}</div></div>\n  <div class=\"extra\">\n    {{#Remarks}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Remarks</div><div>{{Remarks}}</div>\n    </div>\n    {{/Remarks}}\n    {{#Sources}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Sources</div><div>{{Sources}}</div>\n    </div>\n    {{/Sources}}\n  </div>\n</div>\n<script>\n  // remove cloze syntax from revealed hint\n  var hint = document.querySelector('.fullhint>[id^=\"hint\"]')\n  var html = hint.innerHTML.replace(/\\[\\[oc(\\d+)::(.*?)(::(.*?))?\\]\\]/mg, \"$2\")\n  hint.innerHTML = html\n  // scroll to cloze\n  document.addEventListener('DOMContentLoaded', function() {\n    setTimeout(function(){\n      const cloze1 = document.getElementsByClassName(\"cloze\")[0];\n      const rect = cloze1.getBoundingClientRect();\n      const absTop = rect.top + window.pageYOffset;\n      const absBot = rect.bottom + window.pageYOffset;\n      if (absBot >= window.innerHeight) {\n        const height = rect.top - rect.bottom\n        const middle = absTop - (window.innerHeight/2) - (height/2);\n        window.scrollTo(0, middle);};\n    }, 1);\n  }, false);\n</script>",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "cloze-ol",
+                    "ord": 0,
+                    "qfmt": "<div class=\"front\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">\n       <div>{{Original}}</div>\n    </div>\n  </div>\n</div>"
+                }
+            ],
+            "type": 1,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "css": "/* general card style */\n\nhtml {\n  /* scrollbar always visible in order to prevent shift when revealing answer*/\n  overflow-y: scroll;\n}\n\n.card {\n  font-family: \"Helvetica LT Std\", Helvetica, Arial, Sans;\n  font-size: 150%;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\n/* general layout */\n\n.text {\n  /* center left-aligned text on card */\n  display: inline-block;\n  align: center;\n  text-align: left;\n  margin: auto;\n  max-width: 40em;\n}\n\n.hidden {\n  /* guarantees a consistent width across front and back */\n  font-weight: bold;\n  display: block;\n  line-height:0;\n  height: 0;\n  overflow: hidden;\n  visibility: hidden;\n}\n\n.title {\n  font-weight: bold;\n  font-size: 1.1em;\n  margin-bottom: 1em;\n  text-align: center;\n}\n\n/* clozes */\n\n.cloze {\n  /* regular cloze deletion */\n  font-weight: bold;\n  color: #0048FF;\n}\n\n/* original text reveal hint */\n\n.fullhint a {\n  color: #0048FF;\n}\n\n.card21 .fullhint{\n  /* no need to display hint on last card */\n  display:none;\n}\n\n/* additional fields */\n\n.extra{\n  margin-top: 0.5em;\n  margin: auto;\n  max-width: 40em;\n}\n\n.extra-entry{\n  margin-top: 0.8em;\n  font-size: 0.9em;\n  text-align:left;\n}\n\n.extra-descr{\n  margin-bottom: 0.2em;\n  font-weight: bold;\n  font-size: 1em;\n}",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Original",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Title",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Remarks",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Sources",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Settings",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text1",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text2",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text3",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text4",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text5",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text6",
+                    "ord": 10,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text7",
+                    "ord": 11,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text8",
+                    "ord": 12,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text9",
+                    "ord": 13,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text10",
+                    "ord": 14,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text11",
+                    "ord": 15,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text12",
+                    "ord": 16,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text13",
+                    "ord": 17,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text14",
+                    "ord": 18,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text15",
+                    "ord": 19,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text16",
+                    "ord": 20,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text17",
+                    "ord": 21,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text18",
+                    "ord": 22,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text19",
+                    "ord": 23,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text20",
+                    "ord": 24,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Full",
+                    "ord": 25,
+                    "rtl": false,
+                    "size": 12,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "Cloze (overlapping)-344c4",
+            "sortf": 1,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"back\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">{{Original}}</div>\n  </div>\n  <div class=\"extra\"><hr></div>\n  <div class=\"text\"><div class=\"fullhint\">{{hint:Original}}</div></div>\n  <div class=\"extra\">\n    {{#Remarks}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Remarks</div><div>{{Remarks}}</div>\n    </div>\n    {{/Remarks}}\n    {{#Sources}}\n    <div class=\"extra-entry\">\n      <div class=\"extra-descr\">Sources</div><div>{{Sources}}</div>\n    </div>\n    {{/Sources}}\n  </div>\n</div>\n<script>\n  // remove cloze syntax from revealed hint\n  var hint = document.querySelector('.fullhint>[id^=\"hint\"]')\n  var html = hint.innerHTML.replace(/\\[\\[oc(\\d+)::(.*?)(::(.*?))?\\]\\]/mg, \"$2\")\n  hint.innerHTML = html\n  // scroll to cloze\n  document.addEventListener('DOMContentLoaded', function() {\n    setTimeout(function(){\n      const cloze1 = document.getElementsByClassName(\"cloze\")[0];\n      const rect = cloze1.getBoundingClientRect();\n      const absTop = rect.top + window.pageYOffset;\n      const absBot = rect.bottom + window.pageYOffset;\n      if (absBot >= window.innerHeight) {\n        const height = rect.top - rect.bottom\n        const middle = absTop - (window.innerHeight/2) - (height/2);\n        window.scrollTo(0, middle);};\n    }, 1);\n  }, false);\n</script>",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "cloze-ol",
+                    "ord": 0,
+                    "qfmt": "<div class=\"front\">\n  {{#Title}}<div class=\"title\">{{Title}}</div>{{/Title}}\n  <div class=\"text\">\n    {{cloze:Text1}}\n    {{cloze:Text2}}\n    {{cloze:Text3}}\n    {{cloze:Text4}}\n    {{cloze:Text5}}\n    {{cloze:Text6}}\n    {{cloze:Text7}}\n    {{cloze:Text8}}\n    {{cloze:Text9}}\n    {{cloze:Text10}}\n    {{cloze:Text11}}\n    {{cloze:Text12}}\n    {{cloze:Text13}}\n    {{cloze:Text14}}\n    {{cloze:Text15}}\n    {{cloze:Text16}}\n    {{cloze:Text17}}\n    {{cloze:Text18}}\n    {{cloze:Text19}}\n    {{cloze:Text20}}\n    {{cloze:Full}}\n    <div class=\"hidden\">\n       <div>{{Original}}</div>\n    </div>\n  </div>\n</div>"
+                }
+            ],
+            "type": 1,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "d4b9e8be-4070-11ea-accf-4c32759bd5cf",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "Basic (and reversed card)-af051",
+            "req": [
+                [
+                    0,
+                    "all",
+                    [
+                        0
+                    ]
+                ],
+                [
+                    1,
+                    "all",
+                    [
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Front}}"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Card 2",
+                    "ord": 1,
+                    "qfmt": "{{Back}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "css": "/* GENERAL CARD STYLE */\n.card {\n  font-family: \"Helvetica LT Std\", Helvetica, Arial, Sans;\n  font-size: 150%;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\n/* OCCLUSION CSS START - don't edit this */\n#io-overlay {\n  position:absolute;\n  top:0;\n  width:100%;\n  z-index:3\n}\n\n#io-original {\n  position:relative;\n  top:0;\n  width:100%;\n  z-index:2\n}\n\n#io-wrapper {\n  position:relative;\n  width: 100%;\n}\n/* OCCLUSION CSS END */\n\n/* OTHER STYLES */\n#io-header{\n  font-size: 1.1em;\n  margin-bottom: 0.2em;\n}\n\n#io-footer{\n  max-width: 80%;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 0.8em;\n  font-style: italic;\n}\n\n\n#io-extra-wrapper{\n  /* the wrapper is needed to center the\n  left-aligned blocks below it */\n  width: 80%;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 0.5em;\n}\n\n#io-extra{\n  text-align:center;\n  display: inline-block;\n}\n\n.io-extra-entry{\n  margin-top: 0.8em;\n  font-size: 0.9em;\n  text-align:left;\n}\n\n.io-field-descr{\n  margin-bottom: 0.2em;\n  font-weight: bold;\n  font-size: 1em;\n}\n\n#io-revl-btn {\n  font-size: 0.5em;\n}\n\n/* ADJUSTMENTS FOR MOBILE */\n\n.card .mobile, #content .mobile {\n  font-size: 100%;\n  margin: 0;\n}\n\n#io-extra-wrapper .mobile {\n  width: 95%;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "ID (hidden)",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Header",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Image",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Footer",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Remarks",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Sources",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Extra 1",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Extra 2",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Question Mask",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Answer Mask",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Original Mask",
+                    "ord": 10,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "Image Occlusion Enhanced-b25a0",
+            "req": [
+                [
+                    0,
+                    "all",
+                    [
+                        2
+                    ]
+                ]
+            ],
+            "sortf": 1,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{#Image}}\n<script>\n  // Toggle answer mask on clicking the image\n  var toggle = function() {\n    var amask = document.getElementById('io-overlay');\n    if (amask.style.display === 'block' || amask.style.display === '')\n      amask.style.display = 'none';\n    else\n      amask.style.display = 'block'\n  }\n</script>\n<div id=\"io-header\">{{Header}}</div>\n<div id=\"io-wrapper\">\n  <div id=\"io-overlay\">{{Answer Mask}}</div>\n  <div id=\"io-original\">{{Image}}</div>\n</div>\n{{#Footer}}<div id=\"io-footer\">{{Footer}}</div>{{/Footer}}\n<button id=\"io-revl-btn\" onclick=\"toggle();\">Toggle Masks</button>\n<div id=\"io-extra-wrapper\">\n  <div id=\"io-extra\">\n    {{#Remarks}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Remarks</div>{{Remarks}}\n      </div>\n    {{/Remarks}}\n    {{#Sources}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Sources</div>{{Sources}}\n      </div>\n    {{/Sources}}\n    {{#Extra 1}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Extra 1</div>{{Extra 1}}\n      </div>\n    {{/Extra 1}}\n    {{#Extra 2}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Extra 2</div>{{Extra 2}}\n      </div>\n    {{/Extra 2}}\n  </div>\n</div>\n{{/Image}}\n",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "IO Card",
+                    "ord": 0,
+                    "qfmt": "{{#Image}}\n<div id=\"io-header\">{{Header}}</div>\n<div id=\"io-wrapper\">\n  <div id=\"io-overlay\">{{Question Mask}}</div>\n  <div id=\"io-original\">{{Image}}</div>\n</div>\n<div id=\"io-footer\">{{Footer}}</div>\n{{/Image}}\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><div><div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Deltoid</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Lateral 1/3 clavicle<br />Acromion<br />spine of scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Deltoid tuberosity of humerus]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Axillary n]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Flex, medially rotate arm Abduct arm Extend and laterally rotate arm]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::posterior circumflex humeral artery (from axillary artery)]]</td></tr>\n</tbody></table></div></div></div>",
+                "Deltoid",
+                "<img src=\"paste-7159710483406.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><div><div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Deltoid</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Lateral 1/3 clavicle<br />Acromion<br />spine of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div></div></div>",
+                "<div><div><div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Deltoid</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Deltoid tuberosity of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div></div></div>",
+                "<div><div><div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Deltoid</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Axillary n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div></div></div>",
+                "<div><div><div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Deltoid</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Flex, medially rotate arm Abduct arm Extend and laterally rotate arm}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div></div></div>",
+                "<div><div><div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Deltoid</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::posterior circumflex humeral artery (from axillary artery)}}</td></tr>\n</tbody></table></div></div></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><div><div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Deltoid</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Lateral 1/3 clavicle<br />Acromion<br />spine of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Deltoid tuberosity of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Axillary n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Flex, medially rotate arm Abduct arm Extend and laterally rotate arm}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::posterior circumflex humeral artery (from axillary artery)}}</td></tr>\n</tbody></table></div></div></div>"
+            ],
+            "flags": 0,
+            "guid": "kG3sX,D+vu",
+            "newlyAdded": false,
+            "note_model_uuid": "d46ad67a-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "shoulder"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Supraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Supraspinous fossa of scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Greater tubercle of humerus]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Suprascapular n]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Initiates and assists deltoid with abduction]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::suprascapular artery]]</td></tr>\n</tbody></table></div>",
+                "Supraspinatus",
+                "<img src=\"paste-6438155977144.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Supraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Supraspinous fossa of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Supraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Greater tubercle of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Supraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Suprascapular n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Supraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Initiates and assists deltoid with abduction}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Supraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::suprascapular artery}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Supraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Supraspinous fossa of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Greater tubercle of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Suprascapular n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Initiates and assists deltoid with abduction}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::suprascapular artery}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "e1(;rx.siL",
+            "newlyAdded": false,
+            "note_model_uuid": "d46ad67a-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "shoulder"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Infraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Infraspinous fossa of scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Greater tubercle of humerus]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Suprascapular n]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Laterally rotates arm]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::suprascapular artery and circumflex scapular artery]]</td></tr>\n</tbody></table></div>",
+                "Infraspinatus",
+                "<img src=\"paste-6438155977144.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Infraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Infraspinous fossa of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Infraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Greater tubercle of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Infraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Suprascapular n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Infraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Laterally rotates arm}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Infraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::suprascapular artery and circumflex scapular artery}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Infraspinatus</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Infraspinous fossa of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Greater tubercle of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Suprascapular n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Laterally rotates arm}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::suprascapular artery and circumflex scapular artery}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "kha[/3q|Z6",
+            "newlyAdded": false,
+            "note_model_uuid": "d46ad67a-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "shoulder"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Lateral border of scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Greater tubercle of humerus]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Axillary n]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Laterally rotates arm]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::circumflex scapular artery]]</td></tr>\n</tbody></table></div>",
+                "Teres minor",
+                "<img src=\"paste-6438155977144.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Lateral border of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Greater tubercle of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Axillary n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Laterally rotates arm}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::circumflex scapular artery}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Lateral border of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Greater tubercle of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Axillary n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Laterally rotates arm}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::circumflex scapular artery}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "i>fwX{a%:o",
+            "newlyAdded": false,
+            "note_model_uuid": "d46ad67a-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "shoulder"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Subscapularis</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Subscapular fossa of scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Lesser tubercle of humerus]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Upper and lower subscapular n]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Medially rotates arm, holds head of humerus in glenoid cavity]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::subscapular artery (from axillary artery)]]</td></tr>\n</tbody></table></div>",
+                "Subscapularis",
+                "",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Subscapularis</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Subscapular fossa of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Subscapularis</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Lesser tubercle of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Subscapularis</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Upper and lower subscapular n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Subscapularis</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Medially rotates arm, holds head of humerus in glenoid cavity}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Subscapularis</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::subscapular artery (from axillary artery)}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Subscapularis</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Subscapular fossa of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Lesser tubercle of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Upper and lower subscapular n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Medially rotates arm, holds head of humerus in glenoid cavity}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::subscapular artery (from axillary artery)}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "DKBQ-mDfv0",
+            "newlyAdded": false,
+            "note_model_uuid": "d46ad67a-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "shoulder"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Inferior angle of scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Intertubercular sulcus of humerus]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Lower subscapular n]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Adduct and medially rotate arm]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::circumflex scapular artery]]</td></tr>\n</tbody></table></div>",
+                "Teres major",
+                "",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Inferior angle of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Intertubercular sulcus of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Lower subscapular n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Adduct and medially rotate arm}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::circumflex scapular artery}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Action</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Teres major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Inferior angle of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Intertubercular sulcus of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Lower subscapular n}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Adduct and medially rotate arm}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::circumflex scapular artery}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "E}?gH/HJ~Y",
+            "newlyAdded": false,
+            "note_model_uuid": "d46ad67a-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "shoulder"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Trapezius</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Cervical and Thoracic vertebrae]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Lateral 1/3 of clavicle, acromion, spine of scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Scapula elevation (upper fibers), retraction (middle fibers),and depression (lower fibers)]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Spinal accessory nerve (Cranial nerve XI)]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::Transverse cervical artery]]</td></tr>\n</tbody></table></div>",
+                "Trapezius",
+                "<img src=\"paste-10896332031532.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Trapezius</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Cervical and Thoracic vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Trapezius</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Lateral 1/3 of clavicle, acromion, spine of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Trapezius</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Scapula elevation (upper fibers), retraction (middle fibers),and depression (lower fibers)}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Trapezius</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Spinal accessory nerve (Cranial nerve XI)}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Trapezius</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::Transverse cervical artery}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Trapezius</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Cervical and Thoracic vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Lateral 1/3 of clavicle, acromion, spine of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Scapula elevation (upper fibers), retraction (middle fibers),and depression (lower fibers)}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Spinal accessory nerve (Cranial nerve XI)}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Transverse cervical artery}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "h;uGrGKZIE",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Latissimus Dorsi</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Vertebral column (middle of the back)]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Intertubercular groove of humerus (Anterior)]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Medial rotation and adduction of the humerus]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Thoracodorsal nerve]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::Thoracodorsal artery]]</td></tr>\n</tbody></table></div>",
+                "Latissimus Dorsi",
+                "<img src=\"paste-14388140443248.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Latissimus Dorsi</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Vertebral column (middle of the back)}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Latissimus Dorsi</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Intertubercular groove of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Latissimus Dorsi</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Medial rotation and adduction of the humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Latissimus Dorsi</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Thoracodorsal nerve}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Latissimus Dorsi</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::Thoracodorsal artery}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Latissimus Dorsi</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Vertebral column (middle of the back)}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Intertubercular groove of humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Medial rotation and adduction of the humerus}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Thoracodorsal nerve}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Thoracodorsal artery}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "Ozb5Bswn|a",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Spinous processes of cervical vertebrae]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Medial border of scapula below scapular spine]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Retract and elevate the scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Dorsal scapular nerve]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::Dorsal scapular artery]]</td></tr>\n</tbody></table></div>",
+                "Rhomboid Major",
+                "<img src=\"paste-14972255995210.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Spinous processes of cervical vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Medial border of scapula below scapular spine}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Retract and elevate the scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Dorsal scapular nerve}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::Dorsal scapular artery}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Major</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Spinous processes of cervical vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Medial border of scapula below scapular spine}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Retract and elevate the scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Dorsal scapular nerve}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Dorsal scapular artery}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "D~6E9?A}Kj",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Spinous processes of cervical and thoracic vertebrae]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Medial border of scapula above the scapular spine]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Retracts and elevates scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Dorsal scapular nerve]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::Dorsal scapular artery]]</td></tr>\n</tbody></table></div>",
+                "Rhomboid Minor",
+                "<img src=\"paste-15109694948716.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Spinous processes of cervical and thoracic vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Medial border of scapula above the scapular spine}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Retracts and elevates scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Dorsal scapular nerve}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::Dorsal scapular artery}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Rhomboid Minor</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Spinous processes of cervical and thoracic vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Medial border of scapula above the scapular spine}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Retracts and elevates scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Dorsal scapular nerve}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Dorsal scapular artery}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "Co?Q{P29/m",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Levator Scapulae</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Transverse processes of cervical vertebrae]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Superior angle of scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Elevate scapula]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Dorsal scapular nerve]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::Dorsal scapular artery]]</td></tr>\n</tbody></table></div>",
+                "Levator Scapulae",
+                "<img src=\"paste-15479062136186.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Levator Scapulae</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Transverse processes of cervical vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Levator Scapulae</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Superior angle of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Levator Scapulae</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Elevate scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Levator Scapulae</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Dorsal scapular nerve}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Levator Scapulae</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::Dorsal scapular artery}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Levator Scapulae</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Transverse processes of cervical vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Superior angle of scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Elevate scapula}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Dorsal scapular nerve}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Dorsal scapular artery}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "z9[j6(:^GC",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Superior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Spinous processes of cervical and thoracic vertebrae]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Ribs 2-5]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Elevate ribs 2-5]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Intercostal nerves 2-5]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::Intercostal arteries]]</td></tr>\n</tbody></table></div>",
+                "Serratus Posterior Superior",
+                "<img src=\"paste-15788299781718.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Superior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Spinous processes of cervical and thoracic vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Superior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Ribs 2-5}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Superior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Elevate ribs 2-5}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Superior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Intercostal nerves 2-5}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Superior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::Intercostal arteries}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Superior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Spinous processes of cervical and thoracic vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Ribs 2-5}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Elevate ribs 2-5}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Intercostal nerves 2-5}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Intercostal arteries}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "Jt.+;lA!%1",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Inferior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc1::Spinous processes of thoracic and lumbar vertebrae]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc2::Ribs 9-12]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc3::Depress ribs 2-5]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc4::Intercostal nerves 9-12]]</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">[[oc5::Intercostal arteries]]</td></tr>\n</tbody></table></div>",
+                "Serratus Posterior Inferior",
+                "<img src=\"paste-15895673964122.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Inferior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c1::Spinous processes of thoracic and lumbar vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Inferior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c2::Ribs 9-12}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Inferior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c3::Depress ribs 2-5}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Inferior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c4::Intercostal nerves 9-12}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td></tr>\n</tbody></table></div>",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Inferior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">...</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c5::Intercostal arteries}}</td></tr>\n</tbody></table></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div><table style=\"font-size: 1em; width: 100%; border-collapse: collapse;\">\n<thead>\n<tr>\n<th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Muscle</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Origin</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Insertion</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Function</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Innervation</th><th align=\"left\" style=\"width: 16%; padding: 5px;border-bottom: 2px solid #00B3FF\">Artery</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">Serratus Posterior Inferior</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Spinous processes of thoracic and lumbar vertebrae}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Ribs 9-12}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Depress ribs 2-5}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Intercostal nerves 9-12}}</td><td style=\"text-align: left; padding: 5px;border-bottom: 1px solid #B0B0B0\">{{c21::Intercostal arteries}}</td></tr>\n</tbody></table></div>"
+            ],
+            "flags": 0,
+            "guid": "tA]J?i7ez}",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "What are the 3 erector spinae muscles? (Start with the most lateral of the 3)<div><br /></div><div>[[oc1::Iliocostalis]]</div><div>[[oc2::Longissimus]]</div><div>[[oc3::Spinalis]]</div>",
+                "Erector Spinae",
+                "",
+                "",
+                "0,1,0 | n,n,n,n",
+                "What are the 3 erector spinae muscles? (Start with the most lateral of the 3)<div><br /></div><div>{{c1::Iliocostalis}}</div><div>...</div><div>...</div>",
+                "What are the 3 erector spinae muscles? (Start with the most lateral of the 3)<div><br /></div><div>...</div><div>{{c2::Longissimus}}</div><div>...</div>",
+                "What are the 3 erector spinae muscles? (Start with the most lateral of the 3)<div><br /></div><div>...</div><div>...</div><div>{{c3::Spinalis}}</div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "What are the 3 erector spinae muscles? (Start with the most lateral of the 3)<div><br /></div><div>{{c21::Iliocostalis}}</div><div>{{c21::Longissimus}}</div><div>{{c21::Spinalis}}</div>"
+            ],
+            "flags": 0,
+            "guid": "P}Ou38N(A7",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Besides the trapezius, what other major muscle does the spinal accessory nerve innervate?",
+                "Sternocleidomastoid"
+            ],
+            "flags": 0,
+            "guid": "GpvF/Y!ZVk",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9e8be-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "What does it mean for a muscle to be extrinsic?",
+                "Origin is outside of the area where they cause movement"
+            ],
+            "flags": 0,
+            "guid": "flIxe<)KLO",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9e8be-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "What does it mean for a muscle to be intrinsic?",
+                "The muscle originates and inserts in the area where they cause movement"
+            ],
+            "flags": 0,
+            "guid": "j,xsvQ`oXx",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9e8be-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "List all of the superficial extrsinsic back muscles (Alphabetical)<div><br /></div><div>[[oc1::Latissimus dorsi]]</div><div>[[oc2::Levator Scapulae]]</div><div>[[oc3::Rhomboid Major/Minor]]</div><div>[[oc4::Trapezius]]</div>",
+                "Extrinsic Back Muscles",
+                "",
+                "",
+                "0,1,0 | n,n,n,n",
+                "List all of the superficial extrsinsic back muscles (Alphabetical)<div><br /></div><div>{{c1::Latissimus dorsi}}</div><div>...</div><div>...</div><div>...</div>",
+                "List all of the superficial extrsinsic back muscles (Alphabetical)<div><br /></div><div>...</div><div>{{c2::Levator Scapulae}}</div><div>...</div><div>...</div>",
+                "List all of the superficial extrsinsic back muscles (Alphabetical)<div><br /></div><div>...</div><div>...</div><div>{{c3::Rhomboid Major/Minor}}</div><div>...</div>",
+                "List all of the superficial extrsinsic back muscles (Alphabetical)<div><br /></div><div>...</div><div>...</div><div>...</div><div>{{c4::Trapezius}}</div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "List all of the superficial extrsinsic back muscles (Alphabetical)<div><br /></div><div>{{c21::Latissimus dorsi}}</div><div>{{c21::Levator Scapulae}}</div><div>{{c21::Rhomboid Major/Minor}}</div><div>{{c21::Trapezius}}</div>"
+            ],
+            "flags": 0,
+            "guid": "q@4$iLG&BK",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "List the intermediate extrinsic back muscles (alphabetical)<div><br /></div><div>[[oc1::Serratus posterior inferior]]</div><div>[[oc2::Serratus posterior superior]]</div>",
+                "Intrinsic Back Muscles",
+                "",
+                "",
+                "0,1,0 | n,n,n,n",
+                "List the intermediate extrinsic back muscles (alphabetical)<div><br /></div><div>{{c1::Serratus posterior inferior}}</div><div>...</div>",
+                "List the intermediate extrinsic back muscles (alphabetical)<div><br /></div><div>...</div><div>{{c2::Serratus posterior superior}}</div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "List the intermediate extrinsic back muscles (alphabetical)<div><br /></div><div>{{c21::Serratus posterior inferior}}</div><div>{{c21::Serratus posterior superior}}</div>"
+            ],
+            "flags": 0,
+            "guid": "i&S5Y+e]}R",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "List the intrinsic back muscles of the intermediate layer (alphabetical)<div><br /></div><div>[[oc1::Iliocostalis]]</div><div>[[oc2::Longissimus]]</div><div>[[oc3::Spinalis]]</div><div><div><br /></div><div><br /></div></div>",
+                "Intrinsic Back Muscles",
+                "",
+                "",
+                "0,1,0 | n,n,n,n",
+                "List the intrinsic back muscles of the intermediate layer (alphabetical)<div><br /></div><div>{{c1::Iliocostalis}}</div><div>...</div><div>...</div><div><div><br /></div><div><br /></div></div>",
+                "List the intrinsic back muscles of the intermediate layer (alphabetical)<div><br /></div><div>...</div><div>{{c2::Longissimus}}</div><div>...</div><div><div><br /></div><div><br /></div></div>",
+                "List the intrinsic back muscles of the intermediate layer (alphabetical)<div><br /></div><div>...</div><div>...</div><div>{{c3::Spinalis}}</div><div><div><br /></div><div><br /></div></div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "List the intrinsic back muscles of the intermediate layer (alphabetical)<div><br /></div><div>{{c21::Iliocostalis}}</div><div>{{c21::Longissimus}}</div><div>{{c21::Spinalis}}</div><div><div><br /></div><div><br /></div></div>"
+            ],
+            "flags": 0,
+            "guid": "ew7x~WY|?v",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "What is the overall function of the serratus posterior superior and inferior?",
+                "To expand the chest cavity"
+            ],
+            "flags": 0,
+            "guid": "P,wOykNvRt",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9e8be-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The upper fibers of the trapezius travel [[oc1::inferolaterally]] and cause the scapula to [[oc2::elevate]]",
+                "Trapezius fibers",
+                "<img src=\"paste-22600117913128.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "The upper fibers of the trapezius travel {{c1::inferolaterally}} and cause the scapula to ...",
+                "The upper fibers of the trapezius travel ... and cause the scapula to {{c2::elevate}}",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "The upper fibers of the trapezius travel {{c21::inferolaterally}} and cause the scapula to {{c21::elevate}}"
+            ],
+            "flags": 0,
+            "guid": "Kc;4CPkqpv",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The middle fibers of the trapezius travel [[oc1::transversely]] and cause the scapula to [[oc2::retract (adduct)]]",
+                "Trapezius fibers",
+                "<img src=\"paste-22595822945832.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "The middle fibers of the trapezius travel {{c1::transversely}} and cause the scapula to ...",
+                "The middle fibers of the trapezius travel ... and cause the scapula to {{c2::retract (adduct)}}",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "The middle fibers of the trapezius travel {{c21::transversely}} and cause the scapula to {{c21::retract (adduct)}}"
+            ],
+            "flags": 0,
+            "guid": "bVNr^H&ud5",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "The lower fibers of the trapezius travel [[oc1::superolaterally]] and cause the scapula to [[oc2::depress]]",
+                "Trapezius fibers",
+                "<img src=\"paste-22595822945832.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "The lower fibers of the trapezius travel {{c1::superolaterally}} and cause the scapula to ...",
+                "The lower fibers of the trapezius travel ... and cause the scapula to {{c2::depress}}",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "The lower fibers of the trapezius travel {{c21::superolaterally}} and cause the scapula to {{c21::depress}}"
+            ],
+            "flags": 0,
+            "guid": "QSk{fx$bh9",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "What are the boundaries of the Triangle of Auscultation? (Alphabetical)<div><br /></div><div>[[oc1::Latissimus dorsi]]</div><div>[[oc2::Medial border of the scapula]]</div><div>[[oc3::Trapezius]]</div>",
+                "Triangle of Auscultation",
+                "<img src=\"paste-26792005993534.jpg\" />",
+                "",
+                "0,1,0 | n,n,n,n",
+                "What are the boundaries of the Triangle of Auscultation? (Alphabetical)<div><br /></div><div>{{c1::Latissimus dorsi}}</div><div>...</div><div>...</div>",
+                "What are the boundaries of the Triangle of Auscultation? (Alphabetical)<div><br /></div><div>...</div><div>{{c2::Medial border of the scapula}}</div><div>...</div>",
+                "What are the boundaries of the Triangle of Auscultation? (Alphabetical)<div><br /></div><div>...</div><div>...</div><div>{{c3::Trapezius}}</div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "What are the boundaries of the Triangle of Auscultation? (Alphabetical)<div><br /></div><div>{{c21::Latissimus dorsi}}</div><div>{{c21::Medial border of the scapula}}</div><div>{{c21::Trapezius}}</div>"
+            ],
+            "flags": 0,
+            "guid": "G]e|7=bS5i",
+            "newlyAdded": false,
+            "note_model_uuid": "d4b9cf8c-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "8292f242520b48f9b47c8e7a99acdf1c-ao-1",
+                "Cadaver Back Muscles",
+                "<img src=\"Screen Shot 2020-01-22 at 12.47.58 PM.png\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-1-Q.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-1-A.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "vlD1P((a`x",
+            "newlyAdded": false,
+            "note_model_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "8292f242520b48f9b47c8e7a99acdf1c-ao-2",
+                "Cadaver Back Muscles",
+                "<img src=\"Screen Shot 2020-01-22 at 12.47.58 PM.png\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-2-Q.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-2-A.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "OP8JFzR>si",
+            "newlyAdded": false,
+            "note_model_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "8292f242520b48f9b47c8e7a99acdf1c-ao-3",
+                "Cadaver Back Muscles",
+                "<img src=\"Screen Shot 2020-01-22 at 12.47.58 PM.png\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-3-Q.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-3-A.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "lR4&/vNi7J",
+            "newlyAdded": false,
+            "note_model_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "8292f242520b48f9b47c8e7a99acdf1c-ao-4",
+                "Cadaver Back Muscles",
+                "<img src=\"Screen Shot 2020-01-22 at 12.47.58 PM.png\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-4-Q.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-4-A.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "k9y!-A={53",
+            "newlyAdded": false,
+            "note_model_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "8292f242520b48f9b47c8e7a99acdf1c-ao-5",
+                "Cadaver Back Muscles",
+                "<img src=\"Screen Shot 2020-01-22 at 12.47.58 PM.png\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-5-Q.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-5-A.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "DAFHUiO-Ev",
+            "newlyAdded": false,
+            "note_model_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "8292f242520b48f9b47c8e7a99acdf1c-ao-6",
+                "Cadaver Back Muscles",
+                "<img src=\"Screen Shot 2020-01-22 at 12.47.58 PM.png\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-6-Q.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-6-A.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "I,d!N%pwd`",
+            "newlyAdded": false,
+            "note_model_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "8292f242520b48f9b47c8e7a99acdf1c-ao-7",
+                "Cadaver Back Muscles",
+                "<img src=\"Screen Shot 2020-01-22 at 12.47.58 PM.png\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-7-Q.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-7-A.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "LH~;eP[UHI",
+            "newlyAdded": false,
+            "note_model_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "8292f242520b48f9b47c8e7a99acdf1c-ao-8",
+                "Cadaver Back Muscles",
+                "<img src=\"Screen Shot 2020-01-22 at 12.47.58 PM.png\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-8-Q.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-8-A.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "p2n~Hlg6yQ",
+            "newlyAdded": false,
+            "note_model_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "8292f242520b48f9b47c8e7a99acdf1c-ao-9",
+                "Cadaver Back Muscles",
+                "<img src=\"Screen Shot 2020-01-22 at 12.47.58 PM.png\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-9-Q.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-9-A.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "M$U>U/e#Ph",
+            "newlyAdded": false,
+            "note_model_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "8292f242520b48f9b47c8e7a99acdf1c-ao-10",
+                "Cadaver Back Muscles",
+                "<img src=\"Screen Shot 2020-01-22 at 12.47.58 PM.png\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-10-Q.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-10-A.svg\" />",
+                "<img src=\"8292f242520b48f9b47c8e7a99acdf1c-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "j4:P*w-;o`",
+            "newlyAdded": false,
+            "note_model_uuid": "d4ba05f6-4070-11ea-accf-4c32759bd5cf",
+            "tags": [
+                "back"
+            ]
+        }
+    ]
+}
