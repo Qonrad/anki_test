@@ -1932,6 +1932,43 @@
             "tags": [
                 "back"
             ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "trapezius<div>latissimus dorsi</div><div>rhomboid minor</div><div>rhomboid major</div><div>levator scapulae</div>",
+                "superficial extrinsic back muscles",
+                "",
+                "",
+                "1,1,0 | n,n,n,n",
+                "<div>{{c1::trapezius}}</div><div>...</div><div>...</div><div>...</div><div>...</div>",
+                "<div>trapezius</div><div>{{c2::latissimus dorsi}}</div><div>...</div><div>...</div><div>...</div>",
+                "<div>...</div><div>latissimus dorsi</div><div>{{c3::rhomboid minor}}</div><div>...</div><div>...</div>",
+                "<div>...</div><div>...</div><div>rhomboid minor</div><div>{{c4::rhomboid major}}</div><div>...</div>",
+                "<div>...</div><div>...</div><div>...</div><div>rhomboid major</div><div>{{c5::levator scapulae}}</div>",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<div>{{c21::trapezius}}</div><div>{{c21::latissimus dorsi}}</div><div>{{c21::rhomboid minor}}</div><div>{{c21::rhomboid major}}</div><div>{{c21::levator scapulae}}</div>"
+            ],
+            "flags": 0,
+            "guid": "z|qzs$Uvgt",
+            "newlyAdded": false,
+            "note_model_uuid": "d46ad67a-4070-11ea-accf-4c32759bd5cf",
+            "tags": []
         }
     ]
 }
